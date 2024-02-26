@@ -17,6 +17,7 @@ namespace Starpoint.Core
             var database = mongoClient.GetDatabase("sales");
             _ticketsCollection = database.GetCollection<ContaBancaria>(nameof(ContaBancaria));
         }
+
         public ContaBancaria? GetById(Guid id)
         {
             var collection = _ticketsCollection.Find(x => x.Id == id);

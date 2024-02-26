@@ -5,6 +5,7 @@ namespace Starpoint.Core
     public interface IMovimentacaoRepository
     {
         public void Insert(Movimentacao movimentacao);
+        public Movimentacao? GetById(Guid id);
     }
 
     public class MovimentacaoRepository : IMovimentacaoRepository
@@ -16,6 +17,13 @@ namespace Starpoint.Core
             var database = mongoClient.GetDatabase("sales");
             _ticketsCollection = database.GetCollection<Movimentacao>(nameof(Movimentacao));
         }
+
+        public Movimentacao? GetById(Guid id)
+        {
+            var collection = _ticketsCollection.Find(x => x.Id == id);
+            return collection.FirstOrDefault();
+        }
+
         public void Insert(Movimentacao movimentacao)
         {
             _ticketsCollection.InsertOne(movimentacao);

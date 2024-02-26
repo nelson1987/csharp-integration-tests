@@ -1,3 +1,4 @@
+using FluentResults;
 using Microsoft.AspNetCore.Mvc;
 using Starpoint.Core;
 
@@ -8,10 +9,9 @@ namespace Starpoint.Api.Controllers
     public class ProdutoController : ControllerBase
     {
         [HttpPost]
-        public IActionResult Post([FromServices] IInclusaoTransferenciaHandler handler, [FromBody] InclusaoTransferenciaCommand command)
+        public Result Post([FromServices] IInclusaoTransferenciaHandler handler, [FromBody] InclusaoTransferenciaCommand command)
         {
-            handler.Handle(command);
-            return Ok();
+            return handler.Handle(command);
         }
     }
 }
