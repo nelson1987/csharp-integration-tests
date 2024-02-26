@@ -7,9 +7,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{16EBCF76-669
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{DB1302C1-04FD-4D7A-9A6A-FC647BCC6551}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starpoint.Tests", "tests\Starpoint.Tests\Starpoint.Tests.csproj", "{9F543D59-6615-401F-8382-636A567F6E34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Starpoint.Tests", "tests\Starpoint.Tests\Starpoint.Tests.csproj", "{9F543D59-6615-401F-8382-636A567F6E34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starpoint.Api", "src\Starpoint.Api\Starpoint.Api.csproj", "{E8A5F521-8613-493F-97B2-191DCA7DD2E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Starpoint.Api", "src\Starpoint.Api\Starpoint.Api.csproj", "{E8A5F521-8613-493F-97B2-191DCA7DD2E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starpoint.Core", "src\Starpoint.Core\Starpoint.Core.csproj", "{D6CA1424-2339-4C80-8F48-F34990B5BAFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{E8A5F521-8613-493F-97B2-191DCA7DD2E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8A5F521-8613-493F-97B2-191DCA7DD2E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8A5F521-8613-493F-97B2-191DCA7DD2E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6CA1424-2339-4C80-8F48-F34990B5BAFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6CA1424-2339-4C80-8F48-F34990B5BAFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6CA1424-2339-4C80-8F48-F34990B5BAFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6CA1424-2339-4C80-8F48-F34990B5BAFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{9F543D59-6615-401F-8382-636A567F6E34} = {DB1302C1-04FD-4D7A-9A6A-FC647BCC6551}
 		{E8A5F521-8613-493F-97B2-191DCA7DD2E1} = {16EBCF76-6694-4F1B-9E38-1629D1571668}
+		{D6CA1424-2339-4C80-8F48-F34990B5BAFC} = {16EBCF76-6694-4F1B-9E38-1629D1571668}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8CB42D9B-F76E-4A2B-AFF8-FD04438DC396}
